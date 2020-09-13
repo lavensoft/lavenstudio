@@ -1,0 +1,57 @@
+.landing {
+    width: 100%;
+    height: calc(100vh - 112px);
+    background: url('/resources/img/landing.png') no-repeat center bottom / cover;
+
+    @include mobile {
+        height: 100vh;
+        background-size: 389%;
+        background-position: top left;
+    }
+
+    & .page {
+        width: 100%;
+        height: calc(100% - 112px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 112px;
+
+        & .left, & .right {
+            flex: 1;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            &.left {
+                & .groups {
+                    & span {
+                        font-size: 16px;
+                        color: #fff;
+                        letter-spacing: 4.9px; 
+                        display: block;
+                        margin-left: 2px;
+                    }
+
+                    & h1.middle {
+                        margin: 24px 0;
+                        font-size: 48px;
+                        color: #fff;
+                    }
+                }
+            }
+
+            &.right {
+                @include mobile {
+                    display: none;
+                }
+
+                @include tablet {
+                    display: none;
+                }
+            }
+        }
+    }
+}

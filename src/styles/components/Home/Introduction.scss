@@ -1,0 +1,267 @@
+.section {
+    width: 980px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include mobile {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    @include tablet {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    & .left, & .right {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+        &.left {
+            align-items: flex-end;
+
+            & .group {
+                width: 100%;
+            }
+        }
+
+        &.right {
+            align-items: flex-start;
+
+            & .group {
+                width: 100%;
+            }
+        }
+    }
+
+    & h2 {
+        @include mobile {
+            padding: 0 32px;
+            text-align:center;
+        }
+
+        @include tablet {
+            padding: 0 32px;
+            text-align:center;
+        }
+    }
+
+    & p {
+        @include mobile {
+            padding: 0 32px;
+            text-align: center!important;
+        }
+
+        @include tablet {
+            padding: 0 32px;
+            text-align: center!important;
+        }
+    }
+
+    &.first_intro {
+        margin-top: $section-margin-top;
+
+        @include mobile {
+            flex-direction: column-reverse;
+            margin-top: 0;
+        }
+
+        @include tablet {
+            flex-direction: column-reverse;
+            margin-top: 0;
+        }
+    
+        & p {
+            text-align: justify;
+            max-width: 560.21px;
+        }
+
+        & .group {
+            height: 400px;
+
+            .card {
+                position: absolute;
+                left: 0;
+
+                @include mobile {
+                    position: relative;
+                }
+
+                @include tablet {
+                    position: relative;
+                }
+            }
+        }
+    }
+
+    &.second_intro {
+        margin-top: $section-margin-top;
+    
+        & p {
+            text-align: justify;
+            max-width: 560.21px;
+        }
+
+        & .group {
+            height: 400px;
+
+            .card {
+                position: absolute;
+                right: 0;
+
+                @include mobile {
+                    position: relative;
+                }
+
+                @include tablet {
+                    position: relative;
+                }
+            }
+        }
+    }
+
+    &.fifth_intro {
+        margin-top: 32px;
+        flex-direction: column;
+
+        & p {
+            margin-top: 48px;
+            width: 900px;
+            text-align: center;
+
+            @include mobile {
+                width: calc(100% - 32px);
+                padding: 0;
+            }
+
+            @include tablet {
+                width: calc(100% - 32px);
+                padding: 0;
+            }
+        }
+    }
+
+    &.services {
+        margin-top: $section-margin-top;
+        width: 100%;
+        background: url("/resources/img/background.png") no-repeat center center / cover;
+        height: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @include mobile {
+            justify-content: unset;
+            height: auto;
+            padding-bottom: 32px;
+            padding-top: 8px;
+            margin-top: 32px;
+        }
+
+        @include tablet {
+            justify-content: unset;
+            height: auto;
+            padding-bottom: 32px;
+            padding-top: 8px;
+            margin-top: 32px;
+        }
+        
+        & .card_group {
+            width: 980px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @include mobile {
+                width: 100%;
+                flex-direction: column;
+            }
+
+            @include tablet {
+                width: 100%;
+                flex-direction: column;
+            }
+
+            & .card {
+                flex: 1;
+                height: 550px;
+                background: #fff;
+                margin: 8px;
+                margin-top: -96px;
+
+                @include mobile {
+                    margin-top: 32px;
+                    flex: unset;
+                }
+
+                @include tablet {
+                    margin-top: 32px;
+                    flex: unset;
+                }
+
+                &:first-child {
+                    margin-left: 0;
+                }
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                & .icon_container {
+                    margin-top: 32px;
+                }
+            
+                & .button {
+                    position: absolute;
+                    bottom: 32px;
+                }
+            }
+        }
+    }
+
+    &.portfolio {
+        flex-wrap: wrap;
+        margin-top: 48px;
+    }
+
+    &.end {
+        margin-top: $section-margin-top;
+
+        & .action_container {
+            padding: 70px 0px 70px 0px;
+            background-color: #414141;
+            border-radius: 16px;
+            width: 980px;
+            background: url('/resources/img/background2.png') no-repeat center center / cover;
+
+            @include mobile {
+                width: calc(100% - 128px);
+                padding: 32px 32px;
+            }
+
+            @include tablet {
+                width: calc(100% - 128px);
+                padding: 32px 32px;
+            }
+
+            & h1 {
+                color: #fff;
+                margin-top: 0;
+                margin-bottom: 40px;
+
+                @include mobile {
+                    font-size: 24px;
+                    text-align: center;
+                }
+
+                @include tablet {
+                    font-size: 24px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,76 @@
+//SET DEFAULT TEXT FONT
+h1,h2,h3,h4,h5,a,span,p {
+    font-family: $default-font;
+    text-decoration: none;
+    color: $dark-2;
+}
+
+//TEXT STYLE
+//#region
+h1.title { 
+    margin-top: $section-margin-top;
+    font-size: 40px;
+    font-weight: 700;
+    color: $dark-2;
+    margin-bottom: 32px;
+
+    @include mobile {
+        padding: 0 32px;
+        text-align: center!important;
+        font-size: 35px;
+    }
+
+    @include tablet {
+        padding: 0 32px;
+        text-align: center!important;
+        font-size: 35px;
+    }
+}
+
+h2 {
+    font-size: 35px;
+    color: $dark-2;
+    letter-spacing: .004em;
+    line-height: 1.05;
+}
+
+h3 {
+    font-size: 28px;
+    color: $dark-2;
+}
+
+h4 {
+    font-size: 24px;
+    color: $dark-2;
+}
+
+h5 {
+    font-size: 20px;
+    color: $dark-2;
+}
+
+p {
+    line-height: 1.33349;
+    letter-spacing: .009em;
+    font-size: 16px;
+    color: $dark-6;
+    margin: 0;
+}
+
+a.title_link {
+    font-size: 16px;
+    margin-top: 16px;
+    font-weight: 500;
+    transition: all .4s;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+//#endregion
+
+//SECTION STYLES
+section {
+    width: $default-page-width;
+}

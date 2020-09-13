@@ -1,0 +1,24 @@
+.group {
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    &.wrap {
+        flex-direction: column;
+
+        &.right {
+            align-items: flex-end;
+        }
+
+        &.left {
+            align-items: flex-start;
+        }
+    }
+}
+
+.column {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+}

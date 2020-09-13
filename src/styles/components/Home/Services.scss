@@ -1,0 +1,9 @@
+.services_section {
+    margin-top: 32px;
+    & .service_card {
+        width: 300px;
+        height: 450px;
+        padding: 60px 30px;
+        background: $gray-2;
+    }
+}

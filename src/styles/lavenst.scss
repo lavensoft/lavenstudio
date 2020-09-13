@@ -1,0 +1,19 @@
+@import "common/fonts";
+@import "common/variables";
+@import "common/mixins";
+@import "common/default";
+@import "common/aligns";
+@import "common/columns";
+
+//COMPONENTS
+@import "components/Global/Buttons";
+@import "components/Global/Footer";
+@import "components/Global/HeaderBar";
+@import "components/Global/Cards";
+@import "components/Home/Landing";
+@import "components/Home/Services";
+@import "components/Home/Introduction";
+
+body, html {
+    font-family: $default-font;
+}

@@ -1,0 +1,35 @@
+.button {
+    text-decoration: none;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $blue-1;
+    padding: 0 48px;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: $default-font;
+    transition: all .25s;
+
+    &.pink {
+        background: $pink-1;
+    }
+
+    &:active {
+        transform: scale(.9);
+    }
+
+    &:hover {
+        text-decoration: underline;
+    }
+
+    &.white {
+        background: #fff;
+
+        &.o25 {
+            background: rgba(255,255,255,.25);
+        }
+    }
+}
