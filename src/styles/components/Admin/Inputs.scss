@@ -1,0 +1,57 @@
+
+.checkbox {
+    background: $-purple;
+}
+
+.textbox {
+    flex: 1;
+    border: 1px solid #ced4da;
+    padding: .375rem .75rem;
+    transition: all .15s ease;
+    max-width: 240px;
+    border-radius: 4px;
+    font-weight: 500;
+    font-family: $-default-font!important;
+
+    &:focus {
+        color: #495057;
+        background-color: #fff;
+        border-color: $-dark-3-4;
+        outline: 0;
+        box-shadow: 0 0 0 0.2rem $-dark-3-2;
+    }
+}
+
+
+.MuiAutocomplete-root {
+    width: 400px;
+    & .MuiFormControl-root{
+        & label {
+            display: none!important;
+        }
+
+        & .MuiInputBase-root {
+            font-family: $-default-font!important;
+
+            & .MuiAutocomplete-tagSizeSmall {
+                background: $-gray;
+
+                & span {
+                    color: $-dark;
+                    font-size: 14px;
+                    font-family: $-default-font;
+                }
+            }
+
+            & input::placeholder {
+                color: $-dark-4;
+                font-size: 14px;
+                font-family: $-default-font;
+            }
+
+            & .MuiOutlinedInput-notchedOutline {
+                border: none;
+            }
+        }
+    }
+}

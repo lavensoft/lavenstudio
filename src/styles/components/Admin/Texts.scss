@@ -1,0 +1,31 @@
+
+.header {
+    font-size: 24px;
+    color: #2484FF;
+    text-shadow: 0 3px 6px $-dark-3-4;
+    font-weight: 600;
+    margin: 0;
+    margin-top: 24px;
+}
+
+.view_header {
+    font-size: 24px;
+    color: $-dark-3;
+    text-shadow: 0 3px 6px $-dark-3-4;
+    font-weight: 700;
+    margin: 32px;
+}
+
+span, h1, h2, h3, h4, h5, a, p {
+    font-family: $-default-font!important;
+}
+
+span, a {
+    letter-spacing: -.01em;
+    line-height: 1.33337;
+}
+
+p { 
+    letter-spacing: .012em!important;
+    line-height: 1.51053!important;
+}

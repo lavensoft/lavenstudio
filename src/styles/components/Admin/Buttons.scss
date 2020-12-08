@@ -1,0 +1,40 @@
+.btn {
+    height: 32px;
+    padding: 8px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin: 0 10px;
+    background: #F8F8F8;
+    color: #414141;
+    font-weight: 500;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-family: $-default-font;
+    animation: showingUp .25s ease;
+
+    &.link_btn {
+        font-size: 13px;
+        text-decoration: none;
+        height: auto;
+    }
+
+    & .icon {
+        color: #414141;
+        margin-right: 6px;
+    }
+
+    &.blue {
+        background: #2484FF;
+        color: #fff;
+
+        &:active {
+            transform: scale(.95);
+            box-shadow: inset 5px 5px 10px #1877F2,
+                inset -5px -5px 10px #2484FF;
+        }
+    }
+}

@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {BsPerson, BsGraphUp, BsUpload} from 'react-icons/bs';
 import {IoMdFingerPrint, IoIosColorPalette} from 'react-icons/io';
 import {Link} from 'react-router-dom';
+import {SlideShow} from '../Slider/Slider';
 
 class FirstIntroSection extends Component {
     render() {
@@ -119,30 +120,7 @@ class PortfolioSection extends Component {
     render() {
         return(
             <div className="section portfolio">
-                <div className="card gallery">
-                    <div className="badge">
-                        <Link className="title">TEST</Link>
-                        <span className="subtitle">TEST</span>
-                    </div>
-                </div>
-                <div className="card gallery">
-                    <div className="badge">
-                        <Link className="title">TEST</Link>
-                        <span className="subtitle">TEST</span>
-                    </div>
-                </div>
-                <div className="card gallery">
-                    <div className="badge">
-                        <Link className="title">TEST</Link>
-                        <span className="subtitle">TEST</span>
-                    </div>
-                </div>
-                <div className="card gallery">
-                    <div className="badge">
-                        <Link className="title">TEST</Link>
-                        <span className="subtitle">TEST</span>
-                    </div>
-                </div>
+                <SlideShow/>
             </div>
         )
     }

@@ -1,17 +1,13 @@
 import React, {Component} from 'react';
-import {ChildHeaderBar,HeaderBar} from '../components/Global/HeaderBar';
 import {Landing} from '../components/Home/Landing';
 import {Services} from '../components/Home/Services';
 import {EndSection, PortfolioSection,FirstIntroSection, SecondIntroSection, ThirdIntroSection, FourthIntroSection,FifthIntroSection} from '../components/Home/Introduction';
 import {Link} from 'react-router-dom';
-import {Footer} from '../components/Global/Footer';
 
 class Home extends Component {
     render() {
        return(
            <div style={{display: "flex", alignItems:"center", flexDirection: "column"}}>
-               <ChildHeaderBar/>
-               <HeaderBar/>
 
                <Landing/>
 
@@ -27,8 +23,6 @@ class Home extends Component {
                <Link to="/" className="title_link">Xem tất cả</Link>
                <PortfolioSection/>
                <EndSection/>
-
-               <Footer/>
            </div>
        )
     }

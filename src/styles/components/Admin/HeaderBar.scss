@@ -1,0 +1,22 @@
+.view_header_bar {
+    width: calc(100% - #{$-side-bar-width});
+    display: flex;
+    margin: 0;
+    align-items: center;
+    position: fixed;
+    z-index: 999999;
+    background: rgba(255,255,255,.75);
+    backdrop-filter:blur(20px) saturate(280%);
+    border-top-left-radius: 14px;
+
+    & .control {
+        float:right;
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 32px;
+
+        & .textbox {
+        }
+    }
+}

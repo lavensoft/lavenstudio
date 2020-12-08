@@ -1,0 +1,32 @@
+.form {
+    & h1 {
+        font-size: 24px;
+        margin: 0;
+        color: $dark-7;
+    }
+
+    & .err {
+        color: #2484ff;
+        margin: 8px 0 16px;
+        font-size: 13px;
+    }
+
+    & .textbox {
+        margin-top: 16px;
+    }
+
+    & .button {
+        width: 100%;
+        margin-top: 32px;
+    }
+
+    &.login {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 32px;
+        border: 1px solid #ced4da;
+        border-radius: 8px;
+    }
+}

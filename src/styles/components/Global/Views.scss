@@ -1,0 +1,27 @@
+.view {
+    width: 100%;
+    height: 100vh;
+    display: inline-block;
+
+    &.center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &.admin {
+        display: flex;
+        background-color: #151924;
+
+        & main{
+            width: calc(100% - 300px);
+        }
+    }
+
+    &.admin_child {
+        height: calc(100vh - 32px);
+        margin-top: 32px;
+        border-top-left-radius: 14px;
+        background-color: #fff;
+    }
+}

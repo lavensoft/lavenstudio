@@ -1,0 +1,161 @@
+@import "../../styles/lavenst.scss";
+
+footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $gray-4;
+    padding: 16px 0;
+    flex-direction: column;
+    margin-top: $section-margin-top;
+
+    & .footer-top {
+        border-bottom: 1px solid #d2d2d7;
+        margin-bottom: 24px;
+
+        @include mobile {
+            display: none;
+        }
+
+        @include tablet {
+            display: none;
+        }
+
+        & span {
+            font-size: 16px;
+            display: block;
+            margin-bottom: 14px;
+            font-weight: 500;
+        }
+    }
+
+    & .footer-middle {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        border-bottom: 1px solid #d2d2d7;
+        padding-bottom: 24px;
+
+        & .column {
+            flex-basis: 25%;
+
+            @include mobile {
+                width: 100%;
+                align-items: center;
+            }
+
+            @include tablet {
+                width: 100%;
+                align-items: center;
+            }
+
+            & a {
+                @include mobile {
+                    text-align: center;
+                    padding: 0 32px;
+                }
+
+                @include tablet {
+                    text-align: center;
+                    padding: 0 32px;
+                }
+            }
+        }
+
+        @include mobile {
+            flex-direction: column;
+            width: 100%;
+        }
+
+        @include tablet {
+            flex-direction: column;
+            width: 100%;
+        }
+    }
+
+    & .fotter-bottom {
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        padding-top: 16px;
+
+        @include mobile {
+            width: 100%!important;
+        }
+
+        @include tablet {
+            width: 100%!important;
+        }
+
+        & .copyright {
+            position: absolute;
+            left: 0;
+
+            @include mobile {
+                position: relative;
+            }
+
+            @include tablet {
+                position: relative;
+            }
+        }
+
+        & .group {
+
+            @include mobile {
+                display: none;
+            }
+
+            @include tablet {
+                display: none;
+            }
+
+            & .link {
+                margin-right: 6px;
+                padding-right: 10px;
+                border-right: 1px solid #d2d2d7;
+                font-weight: 500;
+
+                &:last-child {
+                    border: none;
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+        }
+
+        & .language {
+            position: absolute;
+            right: 0;
+
+            @include mobile {
+                display: none;
+            }
+
+            @include tablet {
+                display: none;
+            }
+        }
+    }
+
+    & span, & a {
+        color: $black-1;
+        font-size: 12px;
+        margin-bottom: 16px;
+
+        &.title {
+            text-transform: uppercase;
+        }
+
+        &.link:hover {
+            text-decoration: underline;
+        }
+
+        & b {
+            color: $dark-7;
+            font-weight: 700;
+        }
+    }
+}

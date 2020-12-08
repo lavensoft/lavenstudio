@@ -1,0 +1,10 @@
+{
+    "name" : "",
+    "routings" : [
+        {
+            "name" : "Home",
+            "route" : "/",
+            "component" : "Home"
+        }
+    ]
+}
