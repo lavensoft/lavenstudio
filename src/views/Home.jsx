@@ -19,7 +19,7 @@ class Home extends Component {
                <FifthIntroSection/>
                <h1 className="title">DỊCH VỤ CỦA CHÚNG TÔI</h1>
                <Services/>
-               <h1 className="title">CÁC DỰ ÁN LAVEN STUDIO ĐÃ THỰC HIỆN</h1>
+               <h1 className="title">CÁC DỰ ÁN LAVENES ĐÃ THỰC HIỆN</h1>
                <Link to="/" className="title_link">Xem tất cả</Link>
                <PortfolioSection/>
                <EndSection/>

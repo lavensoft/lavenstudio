@@ -9,7 +9,7 @@ class Landing extends Component {
                     <div className="left">
                         <div className="groups">
                             <span className="top">WELCOME TO</span>
-                            <h1 className="middle">LAVEN STUDIO</h1>
+                            <h1 className="middle">LAVENES</h1>
                             <span className="bottom">WEB DESIGN & DEVELOPMENT</span>
                         </div>
                     </div>

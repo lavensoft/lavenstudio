@@ -9,10 +9,10 @@ class ChildNavigationBar extends Component {
             <div className="child_header_bar">
                 <div className="container">
                     <div className="left">
-                        <span>LAVEN STUDIO WEB DESIGN & DEVELOPMENT</span>
+                        <span>LAVENES WEB DESIGN & DEVELOPMENT</span>
                     </div>
                     <div className="right">
-                        <span>HOTLINE: +84 0932894650</span>
+                        <span>HOTLINE: +84 0938.415.997</span>
                         <div className="group">
                             <a>VIE</a>
                         </div>
@@ -32,7 +32,7 @@ class NavigationBar extends Component {
             <div className="header_bar">
                 <div className="container">
                     <div className="left">
-                        <h1>LAVEN STUDIO</h1>
+                        <h1>LAVENES</h1>
                     </div>
                     <div className="right">
                         <ul>

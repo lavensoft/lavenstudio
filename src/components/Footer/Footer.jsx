@@ -31,7 +31,7 @@ class Footer extends Component {
                         <Link className="link">Nhats Devil Glasses & Accessories</Link>
                         <span className="title"><b>Liên Hệ</b></span>
                         <Link className="link">Address: 128/7 Nguyen Thai Hoc Street, Cau Ong Lanh Ward, District 1, Ho Chi Minh City </Link>
-                        <Link className="link">HOTLINE: 0932.894.650</Link>
+                        <Link className="link">HOTLINE: 0938.415.997</Link>
                     </div>
                     <div className="column">
                         <span className="title"><b>GALLERIES</b></span>
@@ -41,7 +41,7 @@ class Footer extends Component {
                     </div>
                 </section>
                 <section className="fotter-bottom">
-                    <span className="copyright">Copyright © 2020 Laven Studio. All rights reserved.</span>
+                    <span className="copyright">Copyright © {new Date().getFullYear()} Lavenes. All rights reserved.</span>
                     <div className="group">
                         <Link className="link">Chính sách riêng tư</Link>
                         <Link className="link">Điều khoản sử dụng</Link>

@@ -37,7 +37,7 @@ class SlideShow extends Component {
                   </div>
                   <div className="each-slide">
                     <div style={{'backgroundImage': `url(${LavenConfession0})`}}>
-                        <h1>Hệ thống Website Laven Confession</h1>
+                        <h1>Hệ thống Website Lavenes Confession</h1>
                     </div>
                   </div>
                   <div className="each-slide">
